@@ -281,6 +281,4 @@
     -->
 	<integer-array translatable="false" name="config_deviceLightCapabilities">3</integer-array>
 
-    <bool name="config_supportDoubleTapWake">true</bool>
-
 </resources>
