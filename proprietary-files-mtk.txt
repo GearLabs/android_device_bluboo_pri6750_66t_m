@@ -38,7 +38,7 @@ bin/msensord
 bin/orientationd
 bin/s62xd
 lib{,64}/libhwm.so
-lib{,64}/hw/sensors.mt6735.so
+lib{,64}/hw/sensors.mt6755.so
 
 # GPS
 -app/YGPS/YGPS.apk
@@ -46,7 +46,7 @@ bin/mtk_agpsd
 bin/slpd
 bin/wifi2agps
 lib/libmnl.so
-lib{,64}/hw/gps.mt6735.so
+lib{,64}/hw/gps.mt6755.so
 xbin/mnld
 
 # Power / Thermal
@@ -81,8 +81,8 @@ lib64/libpq_cust.so
 lib{,64}/libpq_prot.so
 lib{,64}/libpqservice.so
 lib{,64}/libui_ext.so
-lib{,64}/hw/gralloc.mt6735.so
-lib{,64}/hw/hwcomposer.mt6735.so
+lib{,64}/hw/gralloc.mt6755.so
+lib{,64}/hw/hwcomposer.mt6755.so
 lib{,64}/egl/libGLES_mali.so
 
 # WIFI / BT / FM
@@ -91,7 +91,7 @@ lib{,64}/libbluetooth_mtk_pure.so
 lib/libbluetooth_mtk.so
 lib/libbt-vendor.so
 lib{,64}/libfmcust.so
-lib/hw/radio.fm.mt6735.so
+lib/hw/radio.fm.mt6755.so
 etc/firmware/mt6627/mt6627_fm_v1_coeff.bin
 etc/firmware/mt6627/mt6627_fm_v1_patch.bin
 etc/firmware/mt6627/mt6627_fm_v2_coeff.bin
@@ -153,7 +153,7 @@ lib{,64}/libmtkcamera_client.so
 lib{,64}/libmtkjpeg.so
 lib{,64}/libn3d3a.so
 lib{,64}/libSonyIMX230PdafLibrary.so
-lib{,64}/hw/camera.mt6735.so
+lib{,64}/hw/camera.mt6755.so
 
 # Media
 lib{,64}/libaudiocompensationfilter.so
@@ -190,7 +190,7 @@ lib{,64}/libvcodec_oal.so
 lib{,64}/libvcodec_utility.so
 lib/libvp8dec_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
-lib{,64}/hw/audio.primary.mt6735.so
+lib{,64}/hw/audio.primary.mt6755.so
 etc/audio_param/AudioParamOptions.xml
 
 # Meta Mode
@@ -204,8 +204,8 @@ lib64/libacdk.so
 res/sound/ringtone.wav
 
 # Misc
-lib{,64}/hw/lights.mt6735.so
-lib{,64}/hw/memtrack.mt6735.so
+lib{,64}/hw/lights.mt6755.so
+lib{,64}/hw/memtrack.mt6755.so
 
 # MTKLogger
 -app/MTKLogger/MTKLogger.apk
