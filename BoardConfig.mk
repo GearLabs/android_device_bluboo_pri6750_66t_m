@@ -28,6 +28,15 @@ MTK_INTERNAL_CDEFS += $(foreach t,$(AUTO_ADD_GLOBAL_DEFINE_BY_NAME_VALUE),$(if $
 COMMON_GLOBAL_CFLAGS += $(MTK_INTERNAL_CDEFS)
 COMMON_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 
+# Kernel informations
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_BASE := 0x40078000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=permissive
+BOARD_MKBOOTIMG_ARGS := --board K11TA-A.A.vR14. --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
+
+# Kernel properties
+TARGET_KERNEL_SOURCE := kernel/ulefone/k11ta_a
 TARGET_KERNEL_CONFIG := cyanogenmod_k11ta_a_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := k11ta_a
@@ -50,3 +59,9 @@ TARGET_TAP_TO_WAKE_NODE := /sys/devices/soc/soc:touch/enable_gesture
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+# TWRP
+DEVICE_RESOLUTION := 1080x1920
+DEVICE_SCREEN_WIDTH := 1080
+DEVICE_SCREEN_HEIGHT := 1920
+TW_THEME := portrait_hdpi
