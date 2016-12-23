@@ -84,13 +84,11 @@ MTK_GPU_VERSION := mali midgard r7p0
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.io.scheduler=bfq
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=128m \
-    dalvik.vm.heapsize=174m \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapmaxfree=8m \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heaptargetutilization=0.75
+# Dalvik heap configurations
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-4096-dalvik-heap.mk)
+
+# Call hwui memory config
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
 
 # Versioning
 PRODUCT_PROPERTY_OVERRIDES += \
