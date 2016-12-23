@@ -28,8 +28,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
-    $(LOCAL_PATH)/rootdir/fstab.k11ta_a:root/fstab.k11ta_a
+    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
