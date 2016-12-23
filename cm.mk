@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wileyfox/porridge/full_porridge.mk)
+$(call inherit-product, device/ulefone/k11ta_a/full_k11ta_a.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := cm_porridge
-BOARD_VENDOR := wileyfox
-PRODUCT_DEVICE := porridge
+PRODUCT_NAME := cm_k11ta_a
+BOARD_VENDOR := ulefone
+PRODUCT_DEVICE := k11ta_a
 
-PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
+PRODUCT_GMS_CLIENTID_BASE := android-ulefone
 
-PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Spark
+PRODUCT_MANUFACTURER := Ulefone
+PRODUCT_MODEL := Ulefone Future
 
-PRODUCT_BRAND := Wileyfox
-TARGET_VENDOR := wileyfox
-TARGET_VENDOR_PRODUCT_NAME := Spark
-TARGET_VENDOR_DEVICE_NAME := porridge
+PRODUCT_BRAND := Ulefone
+TARGET_VENDOR := ulefone
+TARGET_VENDOR_PRODUCT_NAME := Future
+TARGET_VENDOR_DEVICE_NAME := k11ta_a

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEVICE=porridge
-export VENDOR=wileyfox
+export DEVICE=k11ta_a
+export VENDOR=ulefone
 
 if [ $# -eq 0 ]; then
   SRC=adb

@@ -13,10 +13,10 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/wileyfox/porridge/porridge-vendor.mk
+VENDOR_BLOBS ?= vendor/ulefone/k11ta_a/k11ta_a-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/wileyfox/porridge/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/ulefone/k11ta_a/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Charger and USB
@@ -29,7 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
-    $(LOCAL_PATH)/rootdir/fstab.porridge:root/fstab.porridge
+    $(LOCAL_PATH)/rootdir/fstab.k11ta_a:root/fstab.k11ta_a
 
 # Permissions
 PRODUCT_COPY_FILES += \
