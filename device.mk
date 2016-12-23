@@ -58,9 +58,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# This one is set by init
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
@@ -86,6 +83,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.io.scheduler=bfq
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapgrowthlimit=128m \
+    dalvik.vm.heapsize=174m \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapstartsize=8m \
