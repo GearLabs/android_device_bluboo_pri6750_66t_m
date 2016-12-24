@@ -35,6 +35,7 @@ bin/memsicd3416x
 bin/msensord
 bin/orientationd
 bin/s62xd
+bin/st480
 lib{,64}/libhwm.so
 lib{,64}/hw/sensors.mt6755.so
 
