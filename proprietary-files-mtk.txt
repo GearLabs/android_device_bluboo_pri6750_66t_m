@@ -193,16 +193,6 @@ lib/libvp9dec_sa.ca7.so
 lib{,64}/hw/audio.primary.mt6755.so
 etc/audio_param/AudioParamOptions.xml
 
-# Meta Mode
-bin/meta_tst
-
-# Factory Mode
-bin/factory
-etc/factory.ini
-lib64/libminiui.so
-lib64/libacdk.so
-res/sound/ringtone.wav
-
 # Misc
 lib{,64}/hw/lights.mt6755.so
 lib{,64}/hw/memtrack.mt6755.so
