@@ -26,8 +26,6 @@ MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 ifeq (\$(MTKPATH),)
 ifneq (\$(TARGET_BUILD_VARIANT),user)
 PRODUCT_COPY_FILES += \\
-  $OUTDIR/proprietary/bin/emdlogger1:system/bin/emdlogger1 \\
-  $OUTDIR/proprietary/bin/mdlogger:system/bin/mdlogger \\
   $OUTDIR/proprietary/bin/mobile_log_d:system/bin/mobile_log_d \\
   $OUTDIR/proprietary/bin/netdiag:system/bin/netdiag
 endif
@@ -159,18 +157,6 @@ ifeq (\$(TARGET_DEVICE),k11ta_a)
 ifeq (\$(MTKPATH),)
 
 # Proprietary Modules go here
-
-ifneq (\$(TARGET_BUILD_VARIANT),user)
-include \$(CLEAR_VARS)
-LOCAL_MODULE := MTKLogger
-LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/app/MTKLogger/MTKLogger.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-include \$(BUILD_PREBUILT)
-endif
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := YGPS
