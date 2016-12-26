@@ -164,6 +164,7 @@ lib64/libFPEtsJni.so
 lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.mt6755.so
 
 # Media
+bin/spm_loader
 lib{,64}/libaudio_param_parser.so
 lib{,64}/libaudiocompensationfilter.so
 lib{,64}/libaudiocomponentengine.so
@@ -272,6 +273,13 @@ etc/audio_param/VolumeGainMap_AudioParam.xml
 etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 etc/audio_param/Volume_AudioParam.xml
 etc/audio_param/Volume_ParamUnitDesc.xml
+etc/firmware/pcm_deepidle.bin
+etc/firmware/pcm_deepidle_by_mp1.bin
+etc/firmware/pcm_mcdi_ddrdfs.bin
+etc/firmware/pcm_sodi_ddrdfs.bin
+etc/firmware/pcm_sodi_ddrdfs_by_mp1.bin
+etc/firmware/pcm_suspend.bin
+etc/firmware/pcm_suspend_by_mp1.bin
 
 # Misc
 lib{,64}/hw/lights.mt6755.so
