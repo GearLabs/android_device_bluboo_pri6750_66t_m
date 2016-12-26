@@ -47,6 +47,7 @@ bin/slpd
 bin/wifi2agps
 lib/libmnl.so
 lib{,64}/hw/gps.mt6755.so
+xbin/MPED
 xbin/mnld
 
 # Power / Thermal
