@@ -24,6 +24,7 @@ etc/firmware/em_filter_1_ulwctg_n.bin
 etc/firmware/modem_1_ulwctg_n.img
 
 # Sensors
+bin/AcdApiDaemon
 bin/akmd09911
 bin/akmd8963
 bin/akmd8975
