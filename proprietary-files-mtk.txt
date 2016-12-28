@@ -46,7 +46,11 @@ lib{,64}/hw/sensors.mt6755.so
 bin/mtk_agpsd
 bin/slpd
 bin/wifi2agps
+lib/libDR.so
+lib/libfusion.so
 lib/libmnl.so
+lib/libmpe.driver.so
+lib/libmpe.sensorlistener.so
 lib{,64}/hw/gps.mt6755.so
 xbin/MPED
 xbin/mnld
