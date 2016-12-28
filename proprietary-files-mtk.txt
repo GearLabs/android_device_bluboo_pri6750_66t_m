@@ -73,6 +73,9 @@ lib{,64}/libnvram_sec.so
 lib{,64}/libnvram.so
 
 # Display
+bin/gas_srv
+bin/ged_srv
+bin/guiext-server
 bin/pq
 lib{,64}/libblisrc32.so
 lib{,64}/libblisrc.so
