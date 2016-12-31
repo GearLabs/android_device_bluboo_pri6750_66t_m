@@ -23,11 +23,14 @@ bin/akmd09911
 bin/akmd8963
 bin/akmd8975
 bin/ami304d
+bin/bmibmmd
 bin/bmm050d
 bin/geomagneticd
 bin/mc6420d
 bin/memsicd
 bin/memsicd3416x
+bin/memsicp
+bin/memsicpf
 bin/msensord
 bin/orientationd
 bin/s62xd
@@ -159,7 +162,13 @@ lib{,64}/libSonyIMX230PdafLibrary.so
 lib{,64}/hw/camera.mt6750.so
 
 # Fingerprint
+bin/gx_fpd
 lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.mt6750.so
+lib64/hw/gxfingerprint.default.so:lib64/hw/gxfingerprint.mt6750.so
+lib64/fingerprint.default.so
+lib64/gxfingerprint.default.so
+lib64/libfp_client.so
+lib64/libfpservice.so
 
 # Media
 bin/spm_loader
@@ -200,6 +209,8 @@ lib/libMtkOmxVorbisEnc.so
 lib{,64}/libmtkshifter.so
 lib{,64}/libspeech_enh_lib.so
 lib{,64}/libstagefrighthw.so
+lib{,64}/libtfa9890_interface.so
+lib{,64}/libtfa9890.so
 lib/libvc1dec_sa.ca7.so
 lib{,64}/libvcodecdrv.so
 lib/libvcodec_oal.so
@@ -269,6 +280,15 @@ etc/audio_param/VolumeGainMap_AudioParam.xml
 etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 etc/audio_param/Volume_AudioParam.xml
 etc/audio_param/Volume_ParamUnitDesc.xml
+etc/firmware/pcm_deepidle_m.bin
+etc/firmware/pcm_deepidle_by_mp1_m.bin
+etc/firmware/pcm_mcdi_ddrdfs_m.bin
+etc/firmware/pcm_sodi_ddrdfs_m.bin
+etc/firmware/pcm_sodi_ddrdfs_by_mp1_m.bin
+etc/firmware/pcm_suspend_m.bin
+etc/firmware/pcm_suspend_by_mp1_m.bin
+etc/settings/mono_mtk.cnt
+etc/settings/Tfa98xx.cnt
 
 # Misc
 lib{,64}/hw/lights.mt6750.so
