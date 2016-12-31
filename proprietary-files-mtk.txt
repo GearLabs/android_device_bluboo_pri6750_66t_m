@@ -159,10 +159,6 @@ lib{,64}/libSonyIMX230PdafLibrary.so
 lib{,64}/hw/camera.mt6750.so
 
 # Fingerprint
-bin/etsd
-lib64/libEtsdc.so
-lib64/libFpEts.so
-lib64/libFPEtsJni.so
 lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.mt6750.so
 
 # Media
@@ -206,7 +202,7 @@ lib{,64}/libspeech_enh_lib.so
 lib{,64}/libstagefrighthw.so
 lib/libvc1dec_sa.ca7.so
 lib{,64}/libvcodecdrv.so
-lib{,64}/libvcodec_oal.so
+lib/libvcodec_oal.so
 lib{,64}/libvcodec_utility.so
 lib/libvp8dec_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
@@ -273,13 +269,6 @@ etc/audio_param/VolumeGainMap_AudioParam.xml
 etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 etc/audio_param/Volume_AudioParam.xml
 etc/audio_param/Volume_ParamUnitDesc.xml
-etc/firmware/pcm_deepidle.bin
-etc/firmware/pcm_deepidle_by_mp1.bin
-etc/firmware/pcm_mcdi_ddrdfs.bin
-etc/firmware/pcm_sodi_ddrdfs.bin
-etc/firmware/pcm_sodi_ddrdfs_by_mp1.bin
-etc/firmware/pcm_suspend.bin
-etc/firmware/pcm_suspend_by_mp1.bin
 
 # Misc
 lib{,64}/hw/lights.mt6750.so
