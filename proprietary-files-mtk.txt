@@ -33,7 +33,7 @@ bin/orientationd
 bin/s62xd
 bin/st480
 lib{,64}/libhwm.so
-lib{,64}/hw/sensors.mt6755.so
+lib{,64}/hw/sensors.mt6750.so
 
 # GPS
 -app/YGPS/YGPS.apk
@@ -45,7 +45,7 @@ lib/libfusion.so
 lib/libmnl.so
 lib/libmpe.driver.so
 lib/libmpe.sensorlistener.so
-lib{,64}/hw/gps.mt6755.so
+lib{,64}/hw/gps.mt6750.so
 xbin/MPED
 xbin/mnld
 
@@ -83,8 +83,8 @@ lib{,64}/libion_mtk.so
 lib64/libpq_cust.so
 lib{,64}/libpq_prot.so
 lib{,64}/libpqservice.so
-lib{,64}/hw/gralloc.mt6755.so
-lib{,64}/hw/hwcomposer.mt6755.so
+lib{,64}/hw/gralloc.mt6750.so
+lib{,64}/hw/hwcomposer.mt6750.so
 lib{,64}/egl/libGLES_mali.so
 
 # WIFI / BT / FM
@@ -156,14 +156,14 @@ lib{,64}/libmtkcamera_client.so
 lib{,64}/libmtkjpeg.so
 lib{,64}/libn3d3a.so
 lib{,64}/libSonyIMX230PdafLibrary.so
-lib{,64}/hw/camera.mt6755.so
+lib{,64}/hw/camera.mt6750.so
 
 # Fingerprint
 bin/etsd
 lib64/libEtsdc.so
 lib64/libFpEts.so
 lib64/libFPEtsJni.so
-lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.mt6755.so
+lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.mt6750.so
 
 # Media
 bin/spm_loader
@@ -211,7 +211,7 @@ lib{,64}/libvcodec_utility.so
 lib/libvp8dec_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
 lib/libvp8enc_sa.ca7.so
-lib{,64}/hw/audio.primary.mt6755.so
+lib{,64}/hw/audio.primary.mt6750.so
 etc/audio_param/AudioParamOptions.xml
 etc/audio_param/PlaybackACF_AudioParam.xml
 etc/audio_param/PlaybackACF_ParamUnitDesc.xml
@@ -282,8 +282,8 @@ etc/firmware/pcm_suspend.bin
 etc/firmware/pcm_suspend_by_mp1.bin
 
 # Misc
-lib{,64}/hw/lights.mt6755.so
-lib{,64}/hw/memtrack.mt6755.so
+lib{,64}/hw/lights.mt6750.so
+lib{,64}/hw/memtrack.mt6750.so
 
 # MTKLogger
 -bin/mobile_log_d

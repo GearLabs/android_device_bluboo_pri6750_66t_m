@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOARD_PLATFORM := mt6755
+TARGET_BOARD_PLATFORM := mt6750
 
-DEVICE_PATH := device/ulefone/k11ta_a
+DEVICE_PATH := device/bluboo/pri6750_66t_m
 
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
@@ -36,10 +36,10 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=p
 BOARD_MKBOOTIMG_ARGS := --board K11TA-A.A.vR14. --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/ulefone/k11ta_a
-TARGET_KERNEL_CONFIG := cyanogenmod_k11ta_a_defconfig
+TARGET_KERNEL_SOURCE := kernel/bluboo/pri6750_66t_m
+TARGET_KERNEL_CONFIG := cyanogenmod_pri6750_66t_m_defconfig
 
-TARGET_BOOTLOADER_BOARD_NAME := k11ta_a
+TARGET_BOOTLOADER_BOARD_NAME := pri6750_66t_m
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -57,7 +57,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # TWRP
-DEVICE_RESOLUTION := 1080x1920
-DEVICE_SCREEN_WIDTH := 1080
-DEVICE_SCREEN_HEIGHT := 1920
+DEVICE_RESOLUTION := 720x1280
+DEVICE_SCREEN_WIDTH := 720
+DEVICE_SCREEN_HEIGHT := 1280
 TW_THEME := portrait_hdpi
