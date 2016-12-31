@@ -29,15 +29,13 @@ COMMON_GLOBAL_CFLAGS += $(MTK_INTERNAL_CDEFS)
 COMMON_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 
 # Kernel informations
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=permissive
-BOARD_MKBOOTIMG_ARGS := --board K11TA-A.A.vR14. --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
+BOARD_MKBOOTIMG_ARGS := --board 1478934223 --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/bluboo/pri6750_66t_m
-TARGET_KERNEL_CONFIG := cyanogenmod_pri6750_66t_m_defconfig
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/zImage
 
 TARGET_BOOTLOADER_BOARD_NAME := pri6750_66t_m
 

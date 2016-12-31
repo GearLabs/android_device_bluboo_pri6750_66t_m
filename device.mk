@@ -19,6 +19,16 @@ $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 MTK_PROJECT_CONFIG ?= device/bluboo/pri6750_66t_m/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
+else
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # Charger and USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.vid=2970
