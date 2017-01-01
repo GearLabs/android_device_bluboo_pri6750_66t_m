@@ -149,6 +149,10 @@ lib{,64}/libeffecthal.base.so
 lib{,64}/libfeatureiodrv.so
 lib{,64}/libfeatureio.so
 lib{,64}/libfile_op.so
+lib{,64}/libgybeauty.so
+lib{,64}/libgybeauty422.so
+lib{,64}/libgybeauty420.so
+lib{,64}/libhdrproc.so
 lib{,64}/libimageio_plat_drv.so
 lib{,64}/libimageio.so
 lib/libJpgDecPipe.so
@@ -167,6 +171,7 @@ lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.mt6750.so
 lib64/hw/gxfingerprint.default.so:lib64/hw/gxfingerprint.mt6750.so
 lib64/fingerprint.default.so
 lib64/gxfingerprint.default.so
+lib64/libalgoandroid.so
 lib64/libfp_client.so
 lib64/libfpservice.so
 
