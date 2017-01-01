@@ -21,7 +21,7 @@ include $(MTK_PROJECT_CONFIG)
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
+	LOCAL_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
