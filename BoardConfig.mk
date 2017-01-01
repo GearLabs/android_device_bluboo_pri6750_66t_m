@@ -35,7 +35,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=p
 BOARD_MKBOOTIMG_ARGS := --board 1478934223 --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
 # Kernel properties
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/zImage
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
 
 TARGET_BOOTLOADER_BOARD_NAME := pri6750_66t_m
 
