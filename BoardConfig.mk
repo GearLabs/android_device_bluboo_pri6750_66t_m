@@ -39,6 +39,9 @@ TARGET_PREBUILT_KERNEL := device/bluboo/pri6750_66t_m/prebuilts/kernel
 
 TARGET_BOOTLOADER_BOARD_NAME := pri6750_66t_m
 
+# Audio
+BOARD_USES_NXPSMARTPA_AUDIO := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
