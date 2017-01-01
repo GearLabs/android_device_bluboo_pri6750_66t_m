@@ -18,3 +18,10 @@ LOCAL_PATH := $(call my-dir)
 ifneq (,$(filter pri6750_66t_m,$(TARGET_DEVICE)))
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
+
+ifneq ($(TARGET_PREBUILT_KERNEL),)
+# Some modules (ex. external/tinycompress depend on $(KERNEL_OUT)/usr,
+# but this folder is not created for prebuilt kernel, let'c create it
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr:
+	mkdir -p $@
+endif
