@@ -17,7 +17,7 @@ $(call inherit-product, device/bluboo/pri6750_66t_m/full_pri6750_66t_m.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := cm_pri6750_66t_m
+PRODUCT_NAME := lineage_pri6750_66t_m
 BOARD_VENDOR := bluboo
 PRODUCT_DEVICE := pri6750_66t_m
 

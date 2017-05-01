@@ -1,3 +1,3 @@
-add_lunch_combo cm_pri6750_66t_m-user
-add_lunch_combo cm_pri6750_66t_m-userdebug
-add_lunch_combo cm_pri6750_66t_m-eng
+add_lunch_combo lineage_pri6750_66t_m-user
+add_lunch_combo lineage_pri6750_66t_m-userdebug
+add_lunch_combo lineage_pri6750_66t_m-eng
